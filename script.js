@@ -1,6 +1,6 @@
 const WOO_CONFIG = {
-  siteUrl: "https://worldchampignons.com",
-  productsEndpoint: "https://worldchampignons.com/wp-json/wc/store/v1/products?per_page=24"
+  siteUrl: "https://shop.worldchampignons.com",
+  productsEndpoint: "https://shop.worldchampignons.com/wp-json/wc/store/v1/products?per_page=24"
 };
 
 const fallbackProducts = [
@@ -229,7 +229,7 @@ async function loadWooProducts() {
     products = liveProducts.map(mapWooProduct);
     state.isLiveCatalog = true;
     state.cart = [];
-    shopStatus.textContent = "Live products pulled from worldchampignons.com.";
+    shopStatus.textContent = "Live products pulled from shop.worldchampignons.com.";
     renderProducts();
     renderCart();
   } catch (error) {
@@ -392,7 +392,7 @@ function openProduct(id) {
   document.querySelector("[data-detail-visual]").innerHTML = productVisual(product);
   document.querySelector("[data-detail-story]").textContent = product.story;
   document.querySelector("[data-detail-price]").textContent = product.priceText || money(product.price);
-  document.querySelector("[data-detail-fit]").textContent = product.source === "woo" ? "Purchased securely on worldchampignons.com" : product.fit;
+  document.querySelector("[data-detail-fit]").textContent = product.source === "woo" ? "Purchased securely on shop.worldchampignons.com" : product.fit;
   productDrawer.classList.add("is-open");
   productDrawer.setAttribute("aria-hidden", "false");
   backdrop.hidden = false;
