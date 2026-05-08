@@ -1,6 +1,12 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/api/products"
+  to = "https://shop.worldchampignons.com/wp-json/wc/store/v1/products?per_page=24"
+  status = 200
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

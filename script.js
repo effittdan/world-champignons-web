@@ -1,6 +1,9 @@
 const WOO_CONFIG = {
   siteUrl: "https://shop.worldchampignons.com",
-  productsEndpoint: "https://shop.worldchampignons.com/wp-json/wc/store/v1/products?per_page=24"
+  productsEndpoint:
+    window.location.protocol === "file:"
+      ? "https://shop.worldchampignons.com/wp-json/wc/store/v1/products?per_page=24"
+      : "/api/products"
 };
 
 const fallbackProducts = [
