@@ -474,4 +474,4 @@ document.querySelector("[data-newsletter]").addEventListener("submit", (event) =
 
 renderProducts();
 renderCart();
-loadWooProducts();
+window.setTimeout(loadWooProducts, 300);
