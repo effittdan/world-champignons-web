@@ -7,6 +7,8 @@ import {
 import { database } from "../../server/db.mjs";
 import { cartSelections } from '../../src/pricing.js';
 import { loadCatalog, hasMappings } from "../../server/printful-catalog.mjs";
+import { cachedCatalog } from "../../server/catalog-cache.mjs";
+const browsingCatalog = cachedCatalog(loadCatalog);
 import { stripe, paypal, printful } from "../../server/providers.mjs";
 import {
   PublicError,
@@ -162,7 +164,7 @@ export default async function handler(req, context = {}) {
     if (req.method === "GET" && path === "catalog") {
       if (!hasMappings() || !process.env.PRINTFUL_API_TOKEN)
         return json({ live: false, products: [] });
-      const products = await loadCatalog();
+      const products = await browsingCatalog();
       return json({
         live: true,
         products: products.map((p) => ({ id: p.id, variants: p.variants })),
