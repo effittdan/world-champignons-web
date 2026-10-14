@@ -5,3 +5,12 @@ node_modules/
 dist/
 build/
 *.log
+.env
+.env.*
+!.env.example
+output/pre-moonlit/
+output/world-champignons-node.tgz
+
+output/private-backup/
+output/
+public/assets/products/design-details/*.png

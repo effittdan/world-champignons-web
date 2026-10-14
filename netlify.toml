@@ -1,12 +1,8 @@
 [build]
-  publish = "."
-
-[[redirects]]
-  from = "/api/products"
-  to = "https://shop.worldchampignons.com/wp-json/wc/store/v1/products?per_page=24"
-  status = 200
-  force = true
-
+  command = "npm run build"
+  publish = "dist"
+[functions]
+  directory = "netlify/functions"
 [[headers]]
   for = "/*"
   [headers.values]
