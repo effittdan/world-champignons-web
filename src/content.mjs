@@ -56,32 +56,4 @@ export const collections = [
     line: "Follow your curiosity into the undergrowth.",
     description: "Four illustrated invitations to think freely, worry a little less, and make your own way. Inspired by the words and restless curiosity of Terence McKenna. Every shirt $39, with free standard shipping.",
   },
-  {
-    id: "the-teacher",
-    name: "The Teacher",
-    line: "The forest speaks below language.",
-    description:
-      "Mushroom wisdom, inner discovery, and the living curriculum beneath the leaves.",
-  },
-  {
-    id: "the-great-beneath",
-    name: "The Great Beneath",
-    line: "Everything is connected underground.",
-    description:
-      "Mycelium, underground networks, hidden systems, and the map of connection.",
-  },
-  {
-    id: "the-forbidden-field-guide",
-    name: "The Forbidden Field Guide",
-    line: "Check beneath the obvious.",
-    description:
-      "Field notes, buried knowledge, and doors the polished world avoids.",
-  },
-  {
-    id: "the-love-spore",
-    name: "The Love Spore",
-    line: "Love is the original network.",
-    description:
-      "Tenderness, fungal affection, and the warmer current of the living world.",
-  },
 ];

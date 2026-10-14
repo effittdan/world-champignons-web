@@ -1,6 +1,6 @@
 # World Champignons storefront
 
-Node.js storefront with 28 Comfort Colors 1717 designs across Cultivation (9), Psychedelic Experience (8), Connection & Spirituality (7), and McKenna (4). The build generates 52 routes.
+Node.js storefront with 28 Comfort Colors 1717 designs across Cultivation (9), Psychedelic Experience (8), Connection & Spirituality (7), and McKenna (4). The build generates 48 routes.
 
 ## Development
 

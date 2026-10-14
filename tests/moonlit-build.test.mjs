@@ -56,7 +56,7 @@ test("null cart entries are rejected as a public validation error", () =>
   ));
 test("all generated internal page and asset links resolve", async () => {
   const routes = JSON.parse(await readFile("dist/routes.json", "utf8"));
-  assert.equal(routes.length, 52);
+  assert.equal(routes.length, 48);
   assert.equal(routes.filter(route=>route.startsWith("/product/")).length,28);
   assert.ok(routes.includes("/collections/mckenna"));
   for (const route of routes) {
