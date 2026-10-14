@@ -660,6 +660,20 @@ button:disabled {
 #design-detail-view {
   margin-left: 16px;
 }
+.main-image-button.design-detail > img {
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  padding: 14%;
+}
+.thumb.design-detail > img {
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  padding: 12%;
+}
 .thumb img {
   width: 100%;
   aspect-ratio: 1;
