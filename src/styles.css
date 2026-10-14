@@ -885,6 +885,28 @@ details p {
 .collection-arrow {
   font-size: 33px;
 }
+.forest-site .collection-list > .collection-with-mockup {
+  grid-template-columns: minmax(200px, 32%) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 64px);
+  padding: 28px;
+}
+.collection-mockup {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.collection-copy .eyebrow { display: block; margin-bottom: 16px; }
+.collection-copy .collection-cta { display: inline-flex; margin-top: 24px; }
+@media (max-width: 600px) {
+  .forest-site .collection-list > .collection-with-mockup {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 20px 15px 30px;
+  }
+}
 .collection-feature {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
